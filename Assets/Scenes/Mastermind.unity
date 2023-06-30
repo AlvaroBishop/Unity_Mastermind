@@ -7181,7 +7181,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c03590fa41a52c4ba7f99f585f9f095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 1936530739}
+  resultImage:
+  - {fileID: 2020306904}
+  - {fileID: 1020747698}
+  - {fileID: 1732652246}
+  - {fileID: 137011437}
   slots:
   - {fileID: 2092605713}
   - {fileID: 915130960}
@@ -7191,6 +7195,18 @@ MonoBehaviour:
   - {fileID: 1616037285}
   - {fileID: 2082360896}
   - {fileID: 1926271173}
+  colors:
+  - {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
+  - {r: 0, g: 0.63529414, b: 0.9607844, a: 1}
+  - {r: 0.8705883, g: 0.9607844, b: 0, a: 1}
+  - {r: 0.9607844, g: 0.60784316, b: 0, a: 1}
+  - {r: 0.5294118, g: 0.9607844, b: 0, a: 1}
+  - {r: 0.7058824, g: 0, b: 0.9607844, a: 1}
+  correctPlace: {r: 0.16884732, g: 1, b: 0, a: 0}
+  wrong: {r: 0.6431373, g: 0.7960785, b: 0.79215693, a: 1}
+  correctColor: {r: 0, g: 0, b: 0, a: 0}
+  resultText: {fileID: 1076067643}
+  mastermindPanel: {fileID: 1584803508}
 --- !u!4 &1332579203
 Transform:
   m_ObjectHideFlags: 0
@@ -8992,7 +9008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1584803509
 RectTransform:
   m_ObjectHideFlags: 0

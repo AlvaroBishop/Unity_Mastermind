@@ -5,13 +5,21 @@ using UnityEngine.UI;
 
 public class Mastermind : MonoBehaviour
 {
-    public GameObject result;
+    public Image[] resultImage;
     public GameObject[] slots;
+    public Color[] colors;
+    public Color correctPlace, wrong, correctColor;
+    public Text resultText;
+    public GameObject mastermindPanel;
+    
     private GameObject[][] childObjects;
     private int actualSlot = 0;
     private int actualImageIndex = 0;
-    int[] numeros = new int[] { 2, 3, 4, 5, 7, 8, 10, 11 };
+    private int[] resultImageNumber = new int[] { 7, 8, 10, 11 };
+    int[] randomNumbers = new int[] {6,6,6,6};
 
+    int[] imageNumber = new int[] { 2, 3, 4, 5};
+    
     void Start()
     {
         childObjects = new GameObject[slots.Length][];
@@ -31,43 +39,62 @@ public class Mastermind : MonoBehaviour
                 childObjects[i][j] = children[j].gameObject;
             }
         }
+        
+        SetUpResult();
 
     }
-
-    void ShowChildObjectNames()
-    {
-        // Show the names of child objects and children of child objects
-        for (int i = 0; i < childObjects.Length; i++)
-        {
-            Debug.Log("Slot " + (i + 1) + ":");
-            for (int j = 2; j < childObjects[i].Length; j++)
-            {
-                if (childObjects[i][j] != null)
-                {
-                    Debug.Log("Child " + j + " name: " + childObjects[i][j].name);
-                }
-            }
-        }
-        Debug.Log((childObjects[0][2]));
-    }
-
     public void AddCircle(GameObject button)
     {
         Image buttonImage = button.GetComponent<Image>();
-        Image gameImage = childObjects[actualSlot][numeros[actualImageIndex]].GetComponent<Image>();
+        Image gameImage = childObjects[actualSlot][imageNumber[actualImageIndex]].GetComponent<Image>();
         gameImage.color = buttonImage.color;
 
         actualImageIndex++;
-        if (actualImageIndex == numeros.Length)
+        if (actualImageIndex == imageNumber.Length)
         {
             actualImageIndex = 0;
             actualSlot++;
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void SetUpResult()
     {
+        Debug.Log("Setup");
+        
+        int n = 0;
+        foreach (Image image in resultImage)
+        {
+            int random = Random.Range(0, colors.Length);    
+        
+            do
+            {
+                random = Random.Range(0, colors.Length);
+                image.color = colors[random];
+                Debug.Log(checkDuplicity(randomNumbers, random));
+            } while (checkDuplicity(randomNumbers, random) != false);
 
+            randomNumbers[n] = random;
+            Debug.Log(randomNumbers[n]);
+
+            n++;
+
+        }
+
+    }
+
+    bool checkDuplicity(int[] array, int number)
+    {
+        bool isRepeated = false;
+        for(int i = 0; i < array.Length; i++)
+        {
+            if (number == array[i])
+            {
+                Debug.Log("Number: " + number + " Array: " + array[i]);
+                isRepeated = true;
+            }
+        }
+        
+
+        return isRepeated;
     }
 }
