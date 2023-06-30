@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 15832464}
   - component: {fileID: 15832463}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Slot4Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -605,9 +605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '8
-
-'
+  m_Text: 1
 --- !u!222 &125249308
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -704,7 +702,7 @@ GameObject:
   - component: {fileID: 170207079}
   - component: {fileID: 170207078}
   m_Layer: 5
-  m_Name: Slot (4)
+  m_Name: Slot4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -785,7 +783,7 @@ GameObject:
   - component: {fileID: 184379661}
   - component: {fileID: 184379660}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Slot4Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1024,7 +1022,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '3
+  m_Text: '6
 
 '
 --- !u!222 &217876126
@@ -1106,7 +1104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '6
+  m_Text: '3
 
 '
 --- !u!222 &227772148
@@ -1130,7 +1128,7 @@ GameObject:
   - component: {fileID: 279475237}
   - component: {fileID: 279475236}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Slot5Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,7 +1304,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 297422247}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1332579202}
+        m_TargetAssemblyTypeName: Mastermind, Assembly-CSharp
+        m_MethodName: AddCircle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 297422244}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &297422247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1358,7 +1368,7 @@ GameObject:
   - component: {fileID: 312779550}
   - component: {fileID: 312779549}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: Slot1Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1462,7 +1472,7 @@ GameObject:
   - component: {fileID: 319155634}
   - component: {fileID: 319155633}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: Slot3Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1565,7 +1575,7 @@ GameObject:
   - component: {fileID: 324035106}
   - component: {fileID: 324035105}
   m_Layer: 5
-  m_Name: Slot (5)
+  m_Name: Slot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1907,7 +1917,7 @@ GameObject:
   - component: {fileID: 428905201}
   - component: {fileID: 428905200}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Slot1Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2164,7 +2174,7 @@ GameObject:
   - component: {fileID: 500444624}
   - component: {fileID: 500444623}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Slot6Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2631,7 +2641,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2
+  m_Text: '7
 
 '
 --- !u!222 &559036613
@@ -2731,7 +2741,7 @@ GameObject:
   - component: {fileID: 583881589}
   - component: {fileID: 583881588}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Slot5Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3323,7 +3333,7 @@ GameObject:
   - component: {fileID: 661912347}
   - component: {fileID: 661912346}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Slot8Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3498,13 +3508,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1332579202}
+        m_TargetAssemblyTypeName: Mastermind, Assembly-CSharp
+        m_MethodName: AddCircle
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 735946765}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4313,7 +4323,7 @@ GameObject:
   - component: {fileID: 852853699}
   - component: {fileID: 852853698}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Slot7Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4496,7 +4506,7 @@ GameObject:
   - component: {fileID: 877655278}
   - component: {fileID: 877655277}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: Slot4Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4600,7 +4610,7 @@ GameObject:
   - component: {fileID: 906669698}
   - component: {fileID: 906669697}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: Slot2Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4703,7 +4713,7 @@ GameObject:
   - component: {fileID: 915130963}
   - component: {fileID: 915130962}
   m_Layer: 5
-  m_Name: Slot (6)
+  m_Name: Slot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4784,7 +4794,7 @@ GameObject:
   - component: {fileID: 964048193}
   - component: {fileID: 964048192}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: Slot6Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4888,7 +4898,7 @@ GameObject:
   - component: {fileID: 967911915}
   - component: {fileID: 967911914}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Slot8Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5299,7 +5309,7 @@ GameObject:
   - component: {fileID: 1060773391}
   - component: {fileID: 1060773390}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Slot6Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5406,7 +5416,7 @@ GameObject:
   - component: {fileID: 1068614797}
   - component: {fileID: 1068614796}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Slot3Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5979,7 +5989,7 @@ GameObject:
   - component: {fileID: 1123078458}
   - component: {fileID: 1123078457}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Slot7Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6464,7 +6474,7 @@ GameObject:
   - component: {fileID: 1258174419}
   - component: {fileID: 1258174418}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Slot6Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6711,7 +6721,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '7
+  m_Text: '2
 
 '
 --- !u!222 &1287478120
@@ -6735,7 +6745,7 @@ GameObject:
   - component: {fileID: 1303583439}
   - component: {fileID: 1303583438}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Slot2Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6946,7 +6956,7 @@ GameObject:
   - component: {fileID: 1326176505}
   - component: {fileID: 1326176504}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: Slot5Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7050,7 +7060,7 @@ GameObject:
   - component: {fileID: 1331784979}
   - component: {fileID: 1331784978}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Slot2Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7142,6 +7152,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331784976}
   m_CullTransparentMesh: 1
+--- !u!1 &1332579201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332579203}
+  - component: {fileID: 1332579202}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1332579202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332579201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c03590fa41a52c4ba7f99f585f9f095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  result: {fileID: 1936530739}
+  slots:
+  - {fileID: 2092605713}
+  - {fileID: 915130960}
+  - {fileID: 324035103}
+  - {fileID: 170207076}
+  - {fileID: 1590873360}
+  - {fileID: 1616037285}
+  - {fileID: 2082360896}
+  - {fileID: 1926271173}
+--- !u!4 &1332579203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332579201}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1338169988
 GameObject:
   m_ObjectHideFlags: 0
@@ -7224,7 +7288,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1338169991}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1332579202}
+        m_TargetAssemblyTypeName: Mastermind, Assembly-CSharp
+        m_MethodName: AddCircle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1338169988}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1338169991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7276,7 +7352,7 @@ GameObject:
   - component: {fileID: 1363602193}
   - component: {fileID: 1363602192}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Slot7Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7515,7 +7591,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4
+  m_Text: '5
+
+'
 --- !u!222 &1372747593
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7537,7 +7615,7 @@ GameObject:
   - component: {fileID: 1386986398}
   - component: {fileID: 1386986397}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Slot3Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7796,7 +7874,7 @@ GameObject:
   - component: {fileID: 1467473176}
   - component: {fileID: 1467473175}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Slot4Panel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7981,7 +8059,7 @@ GameObject:
   - component: {fileID: 1499789209}
   - component: {fileID: 1499789208}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Slot1Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8086,7 +8164,7 @@ GameObject:
   - component: {fileID: 1502388325}
   - component: {fileID: 1502388324}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Slot2Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8846,7 +8924,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1580655645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1332579202}
+        m_TargetAssemblyTypeName: Mastermind, Assembly-CSharp
+        m_MethodName: AddCircle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1580655642}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1580655645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8897,7 +8987,7 @@ GameObject:
   - component: {fileID: 1584803511}
   - component: {fileID: 1584803510}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Mastermind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8974,7 +9064,7 @@ GameObject:
   - component: {fileID: 1590873363}
   - component: {fileID: 1590873362}
   m_Layer: 5
-  m_Name: Slot (3)
+  m_Name: Slot5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9113,7 +9203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '5
+  m_Text: '4
 
 '
 --- !u!222 &1607755538
@@ -9136,7 +9226,7 @@ GameObject:
   - component: {fileID: 1616037288}
   - component: {fileID: 1616037287}
   m_Layer: 5
-  m_Name: Slot (2)
+  m_Name: Slot6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9616,7 +9706,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1708267915}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1332579202}
+        m_TargetAssemblyTypeName: Mastermind, Assembly-CSharp
+        m_MethodName: AddCircle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1708267912}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1708267915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9896,7 +9998,7 @@ GameObject:
   - component: {fileID: 1735272397}
   - component: {fileID: 1735272396}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Slot3Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10001,7 +10103,7 @@ GameObject:
   - component: {fileID: 1749270718}
   - component: {fileID: 1749270717}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Slot1Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10108,7 +10210,7 @@ GameObject:
   - component: {fileID: 1763220147}
   - component: {fileID: 1763220146}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Slot8Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10593,7 +10695,7 @@ GameObject:
   - component: {fileID: 1811437660}
   - component: {fileID: 1811437659}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: Slot7Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10766,7 +10868,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1824809188}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1332579202}
+        m_TargetAssemblyTypeName: Mastermind, Assembly-CSharp
+        m_MethodName: AddCircle
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1824809185}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1824809188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10817,7 +10931,7 @@ GameObject:
   - component: {fileID: 1926271176}
   - component: {fileID: 1926271175}
   m_Layer: 5
-  m_Name: Slot
+  m_Name: Slot8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11049,7 +11163,7 @@ GameObject:
   - component: {fileID: 1936530742}
   - component: {fileID: 1936530741}
   m_Layer: 5
-  m_Name: Slot (8)
+  m_Name: Result
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11281,7 +11395,7 @@ GameObject:
   - component: {fileID: 2020513255}
   - component: {fileID: 2020513254}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Slot5Panel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11461,7 +11575,7 @@ GameObject:
   - component: {fileID: 2082360899}
   - component: {fileID: 2082360898}
   m_Layer: 5
-  m_Name: Slot (1)
+  m_Name: Slot7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11541,7 +11655,7 @@ GameObject:
   - component: {fileID: 2092605716}
   - component: {fileID: 2092605715}
   m_Layer: 5
-  m_Name: Slot (7)
+  m_Name: Slot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11698,7 +11812,7 @@ GameObject:
   - component: {fileID: 2109809014}
   - component: {fileID: 2109809013}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: Slot8Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
