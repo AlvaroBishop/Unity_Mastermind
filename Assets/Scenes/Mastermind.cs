@@ -16,9 +16,9 @@ public class Mastermind : MonoBehaviour
     private int actualSlot = 0;
     private int actualImageIndex = 0;
     private int[] resultImageNumber = new int[] { 7, 8, 10, 11 };
+    int[] imageNumber = new int[] { 2, 3, 4, 5};
     int[] randomNumbers = new int[] {6,6,6,6};
 
-    int[] imageNumber = new int[] { 2, 3, 4, 5};
     
     void Start()
     {
@@ -52,8 +52,9 @@ public class Mastermind : MonoBehaviour
         actualImageIndex++;
         if (actualImageIndex == imageNumber.Length)
         {
+            CheckResult();
             actualImageIndex = 0;
-            actualSlot++;
+            
         }
     }
 
@@ -70,11 +71,9 @@ public class Mastermind : MonoBehaviour
             {
                 random = Random.Range(0, colors.Length);
                 image.color = colors[random];
-                Debug.Log(checkDuplicity(randomNumbers, random));
-            } while (checkDuplicity(randomNumbers, random) != false);
+            } while (CheckDuplicity(randomNumbers, random) != false);
 
             randomNumbers[n] = random;
-            Debug.Log(randomNumbers[n]);
 
             n++;
 
@@ -82,19 +81,46 @@ public class Mastermind : MonoBehaviour
 
     }
 
-    bool checkDuplicity(int[] array, int number)
+    bool CheckDuplicity(int[] array, int number)
     {
         bool isRepeated = false;
         for(int i = 0; i < array.Length; i++)
         {
             if (number == array[i])
             {
-                Debug.Log("Number: " + number + " Array: " + array[i]);
                 isRepeated = true;
             }
         }
         
 
         return isRepeated;
+    }
+
+    void CheckResult()
+    {
+        int counter = 0;
+        for (int i = 0; i < resultImage.Length; i++)
+        {
+            Image resultImageSlot = childObjects[actualSlot][resultImageNumber[i]].GetComponent<Image>();
+            CheckColors(counter, resultImageSlot.color, resultImageSlot);
+
+        }
+ 
+    }
+
+    void CheckColors(int startIndex, Color color,Image image)
+    {
+        for (int i = startIndex; i < resultImage.Length; i++)
+        {
+            Debug.Log(resultImage[i].color);
+            if (resultImage[i].color == color)
+            {
+                if (i == startIndex)
+                {
+                    image.color = correctPlace;
+                }
+                image.color = correctColor;
+            }
+        }
     }
 }

@@ -5725,7 +5725,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -7196,15 +7196,15 @@ MonoBehaviour:
   - {fileID: 2082360896}
   - {fileID: 1926271173}
   colors:
-  - {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
-  - {r: 0, g: 0.63529414, b: 0.9607844, a: 1}
-  - {r: 0.8705883, g: 0.9607844, b: 0, a: 1}
-  - {r: 0.9607844, g: 0.60784316, b: 0, a: 1}
-  - {r: 0.5294118, g: 0.9607844, b: 0, a: 1}
-  - {r: 0.7058824, g: 0, b: 0.9607844, a: 1}
-  correctPlace: {r: 0.16884732, g: 1, b: 0, a: 0}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0, g: 0.65882355, b: 1, a: 1}
+  - {r: 0.90588236, g: 1, b: 0, a: 1}
+  - {r: 1, g: 0.63529414, b: 0, a: 1}
+  - {r: 0.5529412, g: 1, b: 0, a: 1}
+  - {r: 0.73333335, g: 0, b: 1, a: 1}
+  correctPlace: {r: 0.16884732, g: 1, b: 0, a: 1}
   wrong: {r: 0.6431373, g: 0.7960785, b: 0.79215693, a: 1}
-  correctColor: {r: 0, g: 0, b: 0, a: 0}
+  correctColor: {r: 0, g: 0, b: 0, a: 1}
   resultText: {fileID: 1076067643}
   mastermindPanel: {fileID: 1584803508}
 --- !u!4 &1332579203
